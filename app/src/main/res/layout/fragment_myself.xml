@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_myself"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4496E4"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tv_myself_title"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="600px"
+        android:background="@drawable/bg_myself">
+
+        <ImageView
+            android:id="@+id/iv_myself_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/head"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_myself_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="74px"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/tv_myself_username"
+            android:textColor="#00a1e9"
+            android:textSize="38px"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:background="#f4f5f9"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+
+        <TextView
+            style="@style/tv_myself"
+            android:text="@string/tv_myself_night"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:button="@drawable/selector_myself_night"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:background="#f4f5f9"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_myself_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        >
+
+        <TextView
+            style="@style/tv_myself"
+            android:text="@string/tv_myself_feedback"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f4f5f9"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_myself_myservice"
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+
+        <TextView
+            style="@style/tv_myself"
+            android:text="@string/tv_myself_myservice"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f4f5f9"/>
+
+    <RelativeLayout
+        android:clickable="false"
+        android:id="@+id/rl_myself_update"
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+
+        <TextView
+            style="@style/tv_myself"
+            android:text="@string/tv_myself_update"/>
+
+
+        <TextView
+            android:id="@+id/tv_myself_versionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:singleLine="true"
+            android:text="@string/tv_myself_versionCode"/>
+
+        <TextView
+            android:id="@+id/tv_myself_newest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:layout_toStartOf="@+id/tv_myself_versionName"
+            android:background="@drawable/yuanjiao_zuixinbanben"
+            android:gravity="center"
+            android:text="@string/tv_myself_newestVersion"
+            android:textColor="#efefef"
+            android:textSize="28px"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:background="#f4f5f9"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_myself_about"
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+
+        <TextView
+            style="@style/tv_myself"
+            android:text="@string/tv_myself_about"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="#f4f5f9">
+
+        <TextView
+            android:id="@+id/tv_myself_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_exit"
+            android:gravity="center"
+            android:text="@string/exit"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

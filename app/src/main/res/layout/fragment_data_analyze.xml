@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_data_analyze"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4498E4"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        >
+
+        <TextView
+            android:id="@+id/tv_data_analyze_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tv_data_monitoring"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_data_analyze_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="10px"
+            android:cropToPadding="true"
+            android:padding="30px"
+            android:src="@drawable/icon_monitoring_notice"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700px"
+        android:background="@drawable/bg_datamonitoring_analysis_blue">
+
+        <RelativeLayout
+            android:id="@+id/rl_analyze"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/tv_dataShow_dataAnalyze"
+                android:textColor="#FFFFFF"
+                android:textSize="40px"
+                />
+
+            <ImageView
+                android:id="@+id/iv_data_analyze_analyze"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50px"
+                android:src="@drawable/icon_shujufenxi"
+                />
+
+            <ImageView
+                android:id="@+id/iv_data_analyze_show"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="8px"
+                android:layout_toLeftOf="@+id/iv_data_analyze_analyze"
+                android:cropToPadding="true"
+                android:padding="30px"
+                android:src="@drawable/icon_shujuxianhsi_default"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_data_analyze_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="208px"
+            android:singleLine="true"
+            android:text="节能分析"
+            android:textColor="#ffffff"
+            android:textSize="80px"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-53px"
+            android:background="@drawable/di_whirte_icon"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_data_analyze_center"
+                android:layout_width="match_parent"
+                android:layout_height="166px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="110px"
+                android:layout_marginRight="110px">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_data_analyze"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80px"
+        android:layout_marginRight="80px"
+        app:tabIndicatorColor="#00a1e9"
+        app:tabSelectedTextColor="#00A1e9"
+        app:tabTextColor="#627281">
+
+    </android.support.design.widget.TabLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lc_data_analyze"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </com.github.mikephil.charting.charts.LineChart>
+
+
+</LinearLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_mydevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4497E4"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tv_mydevice_mydevice"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_mydevice_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="30px"
+            android:cropToPadding="true"
+            android:layout_marginRight="10px"
+            android:src="@drawable/icon_mydeice_notice"
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220px"
+        android:background="@drawable/bg_mydevice"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36px"
+                android:gravity="center"
+                android:text="@string/tv_mydevice_allCount"
+                android:textColor="#ffffff"
+                android:textSize="36px"
+                />
+
+            <TextView
+                android:id="@+id/tv_mydevice_allDevice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24px"
+                android:gravity="center"
+                android:text="119996"
+                android:textColor="#ffffff"
+                android:textSize="72px"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60px"
+                    android:gravity="center"
+                    android:text="@string/tv_mydevice_on"
+                    android:textColor="#ffffff"
+                    android:textSize="36px"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_mydevice_deviceOn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24px"
+                    android:gravity="center"
+                    android:text="12345"
+                    android:textColor="#ffffff"
+                    android:textSize="36px"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60px"
+                    android:gravity="center"
+                    android:text="@string/tv_mydevice_off"
+                    android:textColor="#ffffff"
+                    android:textSize="36px"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_mydevice_deviceOff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24px"
+                    android:gravity="center"
+                    android:text="119"
+                    android:textColor="#ffffff"
+                    android:textSize="36px"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tbl_mydevice"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        app:tabIndicatorColor="#00a1e9"
+        app:tabSelectedTextColor="#00a1e9"
+        app:tabTextColor="#627281"
+        >
+    </android.support.design.widget.TabLayout>
+
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@+id/vp_mydevice"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--</android.support.v4.view.ViewPager>-->
+    <FrameLayout
+        android:id="@+id/fl_myDevice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+</LinearLayout>

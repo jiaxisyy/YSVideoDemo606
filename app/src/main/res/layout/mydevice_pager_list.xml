@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RadioGroup
+            android:id="@+id/rg_mydevice_list"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="#EEEFF3"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_mydevice_on"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="在线"
+                android:textColor="@drawable/selector_mydevice_onoroff"
+                android:textSize="36px"/>
+
+            <RadioButton
+                android:id="@+id/rb_mydevice_off"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="离线"
+                android:textColor="@drawable/selector_mydevice_onoroff"
+                android:textSize="36px"/>
+
+            <RadioButton
+                android:id="@+id/rb_mydevice_all"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@drawable/selector_mydevice_onoroff"
+                android:textSize="36px"/>
+
+        </RadioGroup>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_mydevice_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_mydevice_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="40px"
+        android:src="@drawable/icon_mydevice_search"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <com.baidu.mapapi.map.TextureMapView
+    android:id="@+id/mapView_mydevice"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"/>
+    <LinearLayout
+        android:id="@+id/ll_mydevice_on"
+        style="@style/ll_mydevice_on_off_all"
+        android:layout_marginTop="632px">
+
+        <TextView
+            style="@style/tv_mydevice_map_on_off_all"
+            android:drawablePadding="34px"
+            android:drawableRight="@drawable/state_mydevicei_green_online"
+            android:text="@string/tv_mydevice_map_on"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mydevice_off"
+        style="@style/ll_mydevice_on_off_all"
+        android:layout_below="@id/ll_mydevice_on"
+        >
+
+        <TextView
+
+            style="@style/tv_mydevice_map_on_off_all"
+            android:drawablePadding="34px"
+            android:drawableRight="@drawable/state_mydevicei_grey_offline"
+            android:text="@string/tv_mydevice_map_off"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mydevice_all"
+        style="@style/ll_mydevice_on_off_all"
+        android:layout_below="@id/ll_mydevice_off"
+        >
+
+        <TextView
+            style="@style/tv_mydevice_map_on_off_all"
+            android:text="@string/tv_mydevice_map_all"/>
+    </LinearLayout>
+</RelativeLayout>

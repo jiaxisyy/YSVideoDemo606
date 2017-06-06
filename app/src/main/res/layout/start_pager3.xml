@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/pager3"
+                android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_startPager_experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="210px"
+        android:background="@drawable/rounded_rectangle_1"
+        android:text="@string/btn_startPager3"
+        android:textColor="#ffffff"
+        android:textSize="48px"/>
+
+
+</RelativeLayout>

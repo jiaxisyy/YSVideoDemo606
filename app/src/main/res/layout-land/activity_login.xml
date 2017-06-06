@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_login_input_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/reg_editbox">
+        <!--<EditText-->
+        <!--android:id="@+id/et_login_userName"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0px"-->
+        <!--android:layout_marginLeft="100px"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@null"-->
+        <!--android:hint="@string/enter_username"-->
+        <!--android:singleLine="true"-->
+        <!--android:text="@string/login_username"-->
+        <!--android:textColor="#627281"-->
+        <!--android:textSize="40px"/>-->
+
+
+        <!--<EditText-->
+        <!--android:id="@+id/et_login_passWord"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:background="@null"-->
+        <!--android:inputType="numberPassword"-->
+        <!--android:singleLine="true"-->
+        <!--android:text="@string/login_password"-->
+        <!--android:textColor="#627281"-->
+        <!--android:textSize="40px"/>-->
+        
+
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_login_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"/>
+
+
+</RelativeLayout>

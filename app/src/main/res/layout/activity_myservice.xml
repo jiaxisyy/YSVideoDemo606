@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_myservice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:clipToPadding="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tv_myservice_title"
+            android:textColor="#627281"
+            android:textSize="16sp"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e6e6e6"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="126px"
+        android:gravity="center_vertical"
+        android:paddingLeft="40px"
+        android:text="@string/service_time"
+        android:textColor="#627281"
+        android:textSize="40px"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e6e6e6"
+        />
+
+    <TextView
+        android:id="@+id/tv_callPhone"
+        android:layout_width="match_parent"
+        android:layout_height="126px"
+        android:drawableRight="@drawable/phone"
+        android:gravity="center_vertical"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:text="@string/service_phone"
+        android:textColor="#627281"
+        android:textSize="40px"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e6e6e6"
+        />
+</LinearLayout>

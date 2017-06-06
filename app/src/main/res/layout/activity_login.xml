@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_login_input_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/reg_editbox">
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_login_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_login_textView5"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_login"
+        android:paddingBottom="50px"
+        android:text="@string/login"
+        android:textColor="#627281"
+        android:textSize="44px"/>
+
+    <EditText
+        android:id="@+id/et_login_userName"
+        android:layout_width="match_parent"
+        android:layout_height="137px"
+        android:layout_alignStart="@+id/ll_login_input_bg"
+        android:layout_alignTop="@+id/ll_login_input_bg"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:hint="@string/enter_username"
+        android:paddingLeft="74px"
+        android:singleLine="true"
+        android:text="@string/login_username"
+        android:textColor="#627281"
+        android:textSize="16sp"
+        />
+
+    <EditText
+        android:id="@+id/et_login_passWord"
+        android:layout_width="match_parent"
+        android:layout_height="137px"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/et_login_userName"
+        android:layout_below="@+id/et_login_userName"
+        android:background="@null"
+        android:inputType="textPassword"
+        android:paddingLeft="74px"
+        android:singleLine="true"
+        android:text="@string/login_password"
+        android:textColor="#627281"
+        android:textSize="16sp"/>
+
+    <CheckBox
+        android:id="@+id/cb_login_showPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_login_passWord"
+        android:layout_alignBottom="@+id/et_login_passWord"
+        android:layout_alignEnd="@+id/ll_login_input_bg"
+        android:layout_marginEnd="32dp"
+        android:button="@drawable/selector_login_password"/>
+
+    <TextView
+        android:id="@+id/tv_login_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ll_login_input_bg"
+        android:layout_alignEnd="@+id/btn_login_login"
+        android:layout_marginEnd="15dp"
+        android:paddingBottom="3dp"
+        android:text="@string/tv_login_remember"
+        android:textColor="#627281"
+        android:textSize="10sp"/>
+
+    <CheckBox
+        android:id="@+id/cb_login_isRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_login_textView2"
+        android:layout_marginRight="16px"
+        android:checked="true"
+        android:layout_toLeftOf="@+id/tv_login_textView2"
+        android:button="@drawable/selector_login_check"
+        />
+
+    <TextView
+        android:id="@+id/tv_login_textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/et_login_passWord"
+        android:layout_marginBottom="66dp"
+        android:text="点击登录表示已同意"
+        android:textColor="#c9d3dc"
+        android:textSize="30px"/>
+
+    <TextView
+        android:id="@+id/tv_login_privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_login_textView5"
+        android:layout_toEndOf="@+id/tv_login_textView5"
+        android:text="隐私保护政策"
+        android:textColor="#627281"
+        android:textSize="30px"/>
+
+
+</RelativeLayout>

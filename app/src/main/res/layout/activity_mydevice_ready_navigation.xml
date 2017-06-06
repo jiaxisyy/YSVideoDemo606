@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_readyNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tv_mydevice_readyNavigationTitle"
+            android:textColor="#627281"
+            android:textSize="16sp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <com.baidu.mapapi.map.TextureMapView
+        android:id="@+id/mapView_ready"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tb_readyNavigation"
+        >
+
+    </com.baidu.mapapi.map.TextureMapView>
+
+    <LinearLayout
+        android:id="@+id/ll_ready_endPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="102px"
+        android:layout_below="@+id/tb_readyNavigation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36px"
+        android:background="@drawable/ready_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72px"
+            android:text="@string/tv_mydevice_readyNavigation_endPoint"
+            android:textColor="#00a1e9"
+            android:textSize="40px"/>
+
+        <TextView
+            android:id="@+id/tv_readyNavigation_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="58px"
+            android:singleLine="true"
+            android:textColor="#627281"
+            android:textSize="40px"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="102px"
+        android:layout_below="@+id/ll_ready_endPoint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:background="@drawable/ready_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72px"
+            android:text="@string/tv_mydevice_readyNavigation_gps"
+            android:textColor="#00a1e9"
+            android:textSize="40px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="58px"
+            android:singleLine="true"
+            android:text="@string/tv_mydevice_readyNavigation_address_now"
+            android:textColor="#627281"
+            android:textSize="40px"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_readyNavigation_startNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="102px"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="@string/tv_readyNavigation_startNavigation"
+        android:textColor="#00a1e9"
+        android:textSize="40px"/>
+
+</RelativeLayout>

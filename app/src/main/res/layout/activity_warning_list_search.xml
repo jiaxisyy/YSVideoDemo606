@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+              android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_warning_list_search_head"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="24px"
+            android:layout_weight="1"
+            android:background="@mipmap/mydevice_list_search_edit"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28px"
+                android:src="@mipmap/mydevice_list_search_search"/>
+
+            <TextView
+
+                android:id="@+id/tv_warning_listSearch_startTime"
+                android:layout_width="0px"
+                android:layout_height="32dp"
+                android:layout_marginLeft="54px"
+                android:layout_weight="0.77"
+                android:gravity="center_vertical"
+                android:hint="@string/tv_warning_list_search_startTime"
+                android:singleLine="true"
+                android:textColorHint="#e0e4ea"
+                android:textSize="30px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="至"
+                android:textColor="#627281"
+                android:textSize="30px"/>
+
+            <TextView
+                android:id="@+id/tv_warning_listSearch_endTime"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="54px"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="@string/tv_warning_list_search_endTime"
+                android:singleLine="true"
+                android:textColorHint="#e0e4ea"
+                android:textSize="30px"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_warning_listSearch_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10px"
+            android:gravity="center"
+            android:text="@string/tv_mydevice_search_cancel"
+            android:padding="30px"
+            android:cropToPadding="true"
+            android:textColor="#00a1e9"
+            android:textSize="30px"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_warning_list_search_head"
+        android:background="#eeeff3"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_warning_list_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <!--<com.airbnb.lottie.LottieAnimationView-->
+        <!--android:id="@+id/animation_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:lottie_autoPlay="true"-->
+        <!--app:lottie_fileName="TwitterHeart.json"-->
+        <!--app:lottie_loop="true"/>-->
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <com.baidu.mapapi.map.TextureMapView
+        android:id="@+id/mapView_warning"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"/>
+
+    <LinearLayout
+        android:id="@+id/ll_warning_map_red"
+        style="@style/ll_mydevice_on_off_all"
+        android:layout_marginTop="588px">
+
+        <TextView
+            style="@style/tv_mydevice_map_on_off_all"
+            android:drawablePadding="34px"
+            android:drawableRight="@drawable/state_warning_red_default"
+            android:text="@string/tv_warning_map_red"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_warning_map_orange"
+        style="@style/ll_mydevice_on_off_all"
+        android:layout_below="@+id/ll_warning_map_red"
+        >
+
+        <TextView
+            style="@style/tv_mydevice_map_on_off_all"
+            android:drawablePadding="34px"
+            android:drawableRight="@drawable/state_warning_orange_default"
+            android:text="@string/tv_warning_map_orange"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_warning_map_yellow"
+        style="@style/ll_mydevice_on_off_all"
+        android:layout_below="@id/ll_warning_map_orange"
+        >
+
+        <TextView
+            style="@style/tv_mydevice_map_on_off_all"
+            android:drawablePadding="34px"
+            android:drawableRight="@drawable/state_warning_yellow_default"
+            android:text="@string/tv_warning_map_yellow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_warning_map_green"
+        style="@style/ll_mydevice_on_off_all"
+        android:layout_below="@id/ll_warning_map_yellow"
+        >
+
+        <TextView
+            style="@style/tv_mydevice_map_on_off_all"
+            android:drawablePadding="34px"
+            android:drawableRight="@drawable/state_mydevicei_green_online"
+            android:text="@string/tv_warning_map_green"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_warning_map_all"
+        style="@style/ll_mydevice_on_off_all"
+        android:layout_below="@+id/ll_warning_map_green"
+        >
+
+        <TextView
+            style="@style/tv_mydevice_map_on_off_all"
+            android:text="@string/tv_warning_map_all"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="374px"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/ll_warnign_map_num">
+
+                <TextView
+                    android:id="@+id/tv_warning_map_numRed"
+                    style="@style/tv_warning_map_num"
+                    android:text="36"/>
+
+                <TextView
+                    style="@style/tv_warning_map_num"
+                    android:layout_marginTop="26px"
+                    android:text="@string/tv_warning_map_red"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#e6e6e6"/>
+
+            <LinearLayout
+                style="@style/ll_warnign_map_num"
+                >
+
+                <TextView
+                    android:id="@+id/tv_warning_map_numYellow"
+                    style="@style/tv_warning_map_num"
+                    android:text="36"/>
+
+                <TextView
+                    style="@style/tv_warning_map_num"
+                    android:layout_marginTop="26px"
+                    android:text="@string/tv_warning_map_yellow"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e6e6e6"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/ll_warnign_map_num"
+                >
+
+                <TextView
+                    android:id="@+id/tv_warning_map_numOrange"
+                    style="@style/tv_warning_map_num"
+                    android:text="36"/>
+
+                <TextView
+                    style="@style/tv_warning_map_num"
+                    android:layout_marginTop="26px"
+                    android:text="@string/tv_warning_map_orange"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#e6e6e6"/>
+
+            <LinearLayout
+                style="@style/ll_warnign_map_num"
+                >
+
+                <TextView
+                    android:id="@+id/tv_warning_map_numGreen"
+                    style="@style/tv_warning_map_num"
+                    android:text="36"/>
+
+                <TextView
+                    style="@style/tv_warning_map_num"
+                    android:layout_marginTop="26px"
+                    android:text="@string/tv_warning_map_green"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

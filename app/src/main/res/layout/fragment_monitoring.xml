@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_monitoring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        >
+
+        <TextView
+            android:id="@+id/tv_monitoring_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tv_monitoring_video"
+            android:textColor="#627281"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:cropToPadding="true"
+            android:padding="30px"
+            android:id="@+id/iv_monitoring_Notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="10px"
+            android:src="@drawable/icon_notice_blue"
+            />
+
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e6e6e6"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_monitoring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="#00a1e9"
+        app:tabSelectedTextColor="#00a1e9"
+        app:tabTextColor="#627281"
+
+        >
+    </android.support.design.widget.TabLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_monitoring"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+</LinearLayout>

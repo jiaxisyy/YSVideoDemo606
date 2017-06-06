@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_item_system_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="94px"
+        android:gravity="center"
+        android:text="使用温度"
+        android:textColor="#00a1e9"
+        android:textSize="40px"/>
+
+    <LinearLayout
+        android:id="@+id/ll_item_system_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_system_parameter"
+        android:gravity="center"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_item_system_setting_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="150.0"
+            android:textColor="#627281"
+            android:textSize="50px"/>
+        <TextView
+            android:id="@+id/tv_item_system_setting_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="5px"
+            android:singleLine="true"
+            android:text="%"
+            android:textColor="#627281"
+            android:textSize="50px"/>
+    </LinearLayout>
+
+
+</LinearLayout>

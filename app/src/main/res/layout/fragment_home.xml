@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:fitsSystemWindows="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/tv_home_title"
+                android:textColor="#627281"
+                android:textSize="16sp"
+                />
+        </android.support.v7.widget.Toolbar>
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/banner_home"
+            android:layout_width="match_parent"
+            android:layout_height="600px"
+            app:canLoop="true"
+            />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="340px"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/ll_home_myDevice"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    style="@style/iv_home_icon"
+                    android:src="@drawable/icon_shebeiguanli"
+                    />
+
+                <TextView
+                    style="@style/tv_home_icon_text"
+                    android:text="@string/tv_home_myDevice"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_home_monitoring"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    style="@style/iv_home_icon"
+                    android:src="@drawable/icon_shujujiankong"
+                    />
+
+                <TextView
+                    style="@style/tv_home_icon_text"
+                    android:text="@string/tv_home_monitoring"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_home_warning"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                >
+
+                <ImageView
+                    style="@style/iv_home_icon"
+                    android:src="@drawable/icon_yujingjiance"
+                    />
+
+                <TextView
+                    style="@style/tv_home_icon_text"
+                    android:text="@string/tv_home_warning"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_home_setting"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    style="@style/iv_home_icon"
+                    android:src="@drawable/icon_shezhiguanli"
+                    />
+
+                <TextView
+                    style="@style/tv_home_icon_text"
+                    android:text="@string/tv_home_setting"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e6e6e6"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="160px"
+            android:gravity="center"
+            android:text="@string/tv_home_newProduct"
+            android:textColor="#627281"
+            android:textSize="44px"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_home_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

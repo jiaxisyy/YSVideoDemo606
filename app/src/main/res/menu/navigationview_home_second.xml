@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bnv_home2_data"
+        android:icon="@drawable/icon_bottom_shujuxianshi_default"
+        android:title="数据"
+        
+
+        />
+    <item
+        android:id="@+id/bnv_home2_monitoring"
+        android:icon="@drawable/icon_bottom_jiankong_default"
+        android:title="监控"
+        />
+    <item
+        android:id="@+id/bnv_home2_setting"
+        android:icon="@drawable/icon_bottom_shezhi_default"
+        android:title="设置"
+        />
+</menu>

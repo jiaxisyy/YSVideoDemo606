@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="124px"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_item_warning_listDate"
+        style="@style/tv_warning_listItem"
+        android:text="2016-08-19\n10:51"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_warning_listName"
+        style="@style/tv_warning_listItem"
+        android:text="SPD状态信—空开状态"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_warning_listStatus"
+        style="@style/tv_warning_listItem"
+        android:text="报警产生"
+        />
+</LinearLayout>

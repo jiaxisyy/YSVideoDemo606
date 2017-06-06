@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bnv_home"
+        android:icon="@drawable/icon_home_default"
+        android:title="KAWA"
+        />
+    <item
+        android:id="@+id/bnv_my"
+        android:icon="@drawable/icon_mine_default"
+        android:title="我的"
+
+        />
+</menu>

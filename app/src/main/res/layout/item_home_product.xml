@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_item_homeProduct_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="520px"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_homeProduct_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="38px"
+        android:text="KT"
+        android:textColor="#647483"
+        android:textSize="44px"/>
+
+    <TextView
+        android:id="@+id/tv_item_homeProduct_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="30px"
+        android:text="通讯功能高度整合、可带定位功能、网口扩展远程IO、体积小巧、功能强悍"
+        android:textColor="#8a9aa7"
+        android:textSize="32px"/>
+
+
+</LinearLayout>

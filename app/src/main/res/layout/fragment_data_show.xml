@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FFFFFF"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_data_monitoring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#449AE5"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        >
+
+        <TextView
+            android:id="@+id/tv_dataShow_titleIn_Tb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tv_data_monitoring"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_monitoring_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="10px"
+            android:cropToPadding="true"
+            android:padding="30px"
+            android:src="@drawable/icon_monitoring_notice"
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@drawable/bg_datamonitoring_according_blue"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/tv_dataShow_dataShow"
+                android:textColor="#FFFFFF"
+                android:textSize="40px"
+                />
+
+            <ImageView
+                android:id="@+id/iv_datashow_analyze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="44px"
+                android:src="@drawable/icon_shujufenxi_default"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:cropToPadding="true"
+                android:padding="30px"
+                android:layout_marginEnd="24dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="8px"
+                android:layout_toStartOf="@+id/iv_datashow_analyze"
+                android:src="@drawable/icon_shujuxianhsi_highlight"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dataShow_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20px"
+            android:background="@drawable/datashow_circle"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_dataShow_circleTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70px"
+                android:text="出水温度"
+                android:textColor="#8cd0fb"
+                android:textSize="40px"/>
+
+            <TextView
+                android:id="@+id/tv_dataShow_circleNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="150.0"
+                android:textColor="#f0fafe"
+                android:textSize="140px"/>
+
+            <TextView
+                android:id="@+id/tv_dataShow_circleUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="68px"
+                android:singleLine="true"
+                android:text="单位:℃"
+                android:textColor="#8cd0fb"
+                android:textSize="40px"/>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_dataMonitoring_showCenter"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginLeft="150px"
+            android:layout_marginRight="150px"
+            android:layout_marginTop="30px">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <!--下部分-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_dataMonitoring_showBottom"
+        android:layout_width="match_parent"
+        android:layout_height="288px"
+        android:layout_marginBottom="50px"
+        android:background="#FFFFFF">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
