@@ -78,8 +78,7 @@ public class MyDeviceMapP implements IMydeviceMapP, BDLocationListener, BaiduMap
 
     @Override
     public void clickOn() {
-        mBaiduMap.clear();
-
+        if (mBaiduMap != null) mBaiduMap.clear();
         for (int i = 0; i < mSize; i++) {
             if (mList.get(i).getOnlineStatus().equals("ONLINE")) {
                 if (!mList.get(i).getLatitude().equals("") && !mList.get(i)
@@ -96,7 +95,7 @@ public class MyDeviceMapP implements IMydeviceMapP, BDLocationListener, BaiduMap
 
     @Override
     public void clickOff() {
-        mBaiduMap.clear();
+        if (mBaiduMap != null) mBaiduMap.clear();
         for (int i = 0; i < mSize; i++) {
             if (mList.get(i).getOnlineStatus().equals("OFFLINE")) {
                 if (!mList.get(i).getLatitude().equals("") && !mList.get(i)

@@ -49,11 +49,13 @@ public class WarningMapP implements IWarningMapP, BaiduMap.OnMarkerClickListener
 
     @Override
     public void clickRed() {
-        mBaiduMap.clear();
+        if (mBaiduMap != null) mBaiduMap.clear();
         for (int i = 0; i < mSize; i++) {
             if (mList.get(i).getLevel().equals("1")) {
-                addMaker(Double.valueOf(mList.get(i).getLatitude()), Double.valueOf(mList.get(i)
-                        .getLongitude()), MAKERTYPE_RED);
+                if (!mList.get(i).getLatitude().equals("") && !mList.get(i)
+                        .getLongitude().equals(""))
+                    addMaker(Double.valueOf(mList.get(i).getLatitude()), Double.valueOf(mList.get(i)
+                            .getLongitude()), MAKERTYPE_RED);
             }
         }
 
@@ -67,11 +69,13 @@ public class WarningMapP implements IWarningMapP, BaiduMap.OnMarkerClickListener
 
     @Override
     public void clickOrange() {
-        mBaiduMap.clear();
+        if (mBaiduMap != null) mBaiduMap.clear();
         for (int i = 0; i < mSize; i++) {
             if (mList.get(i).getLevel().equals("2")) {
-                addMaker(Double.valueOf(mList.get(i).getLatitude()), Double.valueOf(mList.get(i)
-                        .getLongitude()), MAKERTYPE_ORANGE);
+                if (!mList.get(i).getLatitude().equals("") && !mList.get(i)
+                        .getLongitude().equals(""))
+                    addMaker(Double.valueOf(mList.get(i).getLatitude()), Double.valueOf(mList.get(i)
+                            .getLongitude()), MAKERTYPE_ORANGE);
             }
         }
 
@@ -85,11 +89,13 @@ public class WarningMapP implements IWarningMapP, BaiduMap.OnMarkerClickListener
 
     @Override
     public void clickYellow() {
-        mBaiduMap.clear();
+        if (mBaiduMap != null) mBaiduMap.clear();
         for (int i = 0; i < mSize; i++) {
             if (mList.get(i).getLevel().equals("3")) {
-                addMaker(Double.valueOf(mList.get(i).getLatitude()), Double.valueOf(mList.get(i)
-                        .getLongitude()), MAKERTYPE_YELLOW);
+                if (!mList.get(i).getLatitude().equals("") && !mList.get(i)
+                        .getLongitude().equals(""))
+                    addMaker(Double.valueOf(mList.get(i).getLatitude()), Double.valueOf(mList.get(i)
+                            .getLongitude()), MAKERTYPE_YELLOW);
             }
         }
 
@@ -102,11 +108,13 @@ public class WarningMapP implements IWarningMapP, BaiduMap.OnMarkerClickListener
 
     @Override
     public void clickGreen() {
-        mBaiduMap.clear();
+        if (mBaiduMap != null) mBaiduMap.clear();
         for (int i = 0; i < mSize; i++) {
             if (mList.get(i).getLevel().equals("4")) {
-                addMaker(Double.valueOf(mList.get(i).getLatitude()), Double.valueOf(mList.get(i)
-                        .getLongitude()), MAKERTYPE_GREEN);
+                if (!mList.get(i).getLatitude().equals("") && !mList.get(i)
+                        .getLongitude().equals(""))
+                    addMaker(Double.valueOf(mList.get(i).getLatitude()), Double.valueOf(mList.get(i)
+                            .getLongitude()), MAKERTYPE_GREEN);
             }
         }
     }
@@ -120,17 +128,25 @@ public class WarningMapP implements IWarningMapP, BaiduMap.OnMarkerClickListener
     public void clickAll() {
         for (int i = 0; i < mSize; i++) {
             if (mList.get(i).getLevel().equals("1")) {
+                if (!mList.get(i).getLatitude().equals("") && !mList.get(i)
+                        .getLongitude().equals(""))
                 addMaker(Double.valueOf(mList.get(i).getLatitude()), Double.valueOf(mList.get(i)
                         .getLongitude()), MAKERTYPE_RED);
             } else if (mList.get(i).getLevel().equals("2")) {
+                if (!mList.get(i).getLatitude().equals("") && !mList.get(i)
+                        .getLongitude().equals(""))
                 addMaker(Double.valueOf(mList.get(i).getLatitude()), Double.valueOf(mList.get(i)
                         .getLongitude()), MAKERTYPE_ORANGE);
 
             } else if (mList.get(i).getLevel().equals("3")) {
+                if (!mList.get(i).getLatitude().equals("") && !mList.get(i)
+                        .getLongitude().equals(""))
                 addMaker(Double.valueOf(mList.get(i).getLatitude()), Double.valueOf(mList.get(i)
                         .getLongitude()), MAKERTYPE_YELLOW);
 
             } else if (mList.get(i).getLevel().equals("4")) {
+                if (!mList.get(i).getLatitude().equals("") && !mList.get(i)
+                        .getLongitude().equals(""))
                 addMaker(Double.valueOf(mList.get(i).getLatitude()), Double.valueOf(mList.get(i)
                         .getLongitude()), MAKERTYPE_GREEN);
             }
@@ -188,32 +204,32 @@ public class WarningMapP implements IWarningMapP, BaiduMap.OnMarkerClickListener
         mSize = data.size();
         for (int i = 0; i < mSize; i++) {
             if (data.get(i).getLevel().equals("1")) {
-                if(!data.get(i).getLatitude().equals("")&&!data.get(i)
-                        .getLongitude().equals("")){
+                if (!data.get(i).getLatitude().equals("") && !data.get(i)
+                        .getLongitude().equals("")) {
                     addMaker(Double.valueOf(data.get(i).getLatitude()), Double.valueOf(data.get(i)
                             .getLongitude()), MAKERTYPE_RED);
 
                 }
                 countRed++;
             } else if (data.get(i).getLevel().equals("2")) {
-                if(!data.get(i).getLatitude().equals("")&&!data.get(i)
-                        .getLongitude().equals("")){
+                if (!data.get(i).getLatitude().equals("") && !data.get(i)
+                        .getLongitude().equals("")) {
                     addMaker(Double.valueOf(data.get(i).getLatitude()), Double.valueOf(data.get(i)
                             .getLongitude()), MAKERTYPE_ORANGE);
 
                 }
                 countOrange++;
             } else if (data.get(i).getLevel().equals("3")) {
-                if(!data.get(i).getLatitude().equals("")&&!data.get(i)
-                        .getLongitude().equals("")){
+                if (!data.get(i).getLatitude().equals("") && !data.get(i)
+                        .getLongitude().equals("")) {
                     addMaker(Double.valueOf(data.get(i).getLatitude()), Double.valueOf(data.get(i)
                             .getLongitude()), MAKERTYPE_YELLOW);
 
                 }
                 countYellow++;
             } else if (data.get(i).getLevel().equals("4")) {
-                if(!data.get(i).getLatitude().equals("")&&!data.get(i)
-                        .getLongitude().equals("")){
+                if (!data.get(i).getLatitude().equals("") && !data.get(i)
+                        .getLongitude().equals("")) {
                     addMaker(Double.valueOf(data.get(i).getLatitude()), Double.valueOf(data.get(i)
                             .getLongitude()), MAKERTYPE_GREEN);
 
