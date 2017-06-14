@@ -5,10 +5,12 @@ import android.content.Intent;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.shuangxiang.ysvideodemo.R;
 import com.example.shuangxiang.ysvideodemo.common.Constants;
 import com.example.shuangxiang.ysvideodemo.common.utils.CacheUtils;
+import com.example.shuangxiang.ysvideodemo.common.utils.CustomToast;
 import com.example.shuangxiang.ysvideodemo.ui.BaseFragment;
 import com.example.shuangxiang.ysvideodemo.ui.mydevice.list.decoration.MyDecoration;
 import com.example.shuangxiang.ysvideodemo.ui.warning.record.adapter.WarningListRVAllAdapter;
@@ -100,6 +102,11 @@ public class WarningRecordFragment extends BaseFragment implements IWarningListV
     @Override
     public void loadMore(List<WarningInfo.ListBean> data) {
 
+    }
+
+    @Override
+    public void setToast(String s) {
+        CustomToast.showToast(getActivity(),s, Toast.LENGTH_SHORT);
     }
 
     @Override

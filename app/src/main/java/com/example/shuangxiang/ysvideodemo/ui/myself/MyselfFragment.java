@@ -171,8 +171,10 @@ public class MyselfFragment extends BaseFragment implements IMyselfFragmentV, ID
 
     @Override
     public void showNewestVersion() {
-        mTvNewest.setVisibility(View.VISIBLE);
-        mRlUpdate.setClickable(false);
+        if (mTvNewest != null && mRlUpdate != null){
+            mTvNewest.setVisibility(View.VISIBLE);
+            mRlUpdate.setClickable(false);
+        }
     }
 
     @Override

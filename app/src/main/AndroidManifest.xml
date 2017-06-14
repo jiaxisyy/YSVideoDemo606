@@ -42,6 +42,9 @@
     <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION"/>
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
     <uses-permission android:name="android.permission.ACCESS_GPS"/>
+    <!--萤石云新增的两个权限-->
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
 
     <application
         android:name=".MyApplication"
@@ -66,7 +69,8 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.BaiDuMapActivity"/>
+        <activity android:name=".ui.BaiDuMapActivity"
+                  android:screenOrientation="portrait"/>
 
 
         <receiver
@@ -83,31 +87,49 @@
             android:process=":remote">
         </service>
 
-        <activity android:name="retrofit.RetrofitActivity"/>
-        <activity android:name=".login.view.LoginActivity"/>
-        <activity android:name=".feedback.FeedbackActivity"/>
-        <activity android:name=".myservice.MyServiceActivity"/>
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".ui.StartPagerActivity"/>
-        <activity android:name=".ui.HomeActivity"/>
-        <activity android:name=".ui.TestActivity"/>
-        <activity android:name=".ui.mydevice.MyDeviceActivity"/>
-        <activity android:name=".ui.mydevice.search.MyDeviceListSearchActivity"/>
-        <activity android:name=".ui.warning.WarningActivity"/>
-        <activity android:name=".ui.warning.record.search.WarningListSearchActivity"/>
+        <activity android:name="retrofit.RetrofitActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".login.view.LoginActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".feedback.FeedbackActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".myservice.MyServiceActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.StartPagerActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.HomeActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.TestActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.mydevice.MyDeviceActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.mydevice.search.MyDeviceListSearchActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.warning.WarningActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.warning.record.search.WarningListSearchActivity"
+                  android:screenOrientation="portrait"/>
         <activity android:name=".ui.SecondHomeActivity"
-                  android:windowSoftInputMode="adjustPan"/>
-        <activity android:name=".ui.about.AboutActivity"/>
-        <activity android:name=".ui.about.kawa.AboutKawaActivity"/>
-        <activity android:name=".ui.about.privacy.PrivacyActivity"/>
-        <activity android:name=".ui.mydevice.map.ReadyNavigationActivity"/>
+                  android:windowSoftInputMode="adjustPan"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.about.AboutActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.about.kawa.AboutKawaActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.about.privacy.PrivacyActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.mydevice.map.ReadyNavigationActivity"
+                  android:screenOrientation="portrait"/>
         <activity android:name=".ui.monitoring.video.MonitoringVideoFullScreenActivity"
                   android:launchMode="singleTask" android:screenOrientation="landscape"
             />
 
         <service android:name=".service.MyIntentService"/>
 
-        <activity android:name=".ui.mydevice.map.navigation.BNDemoMainActivity"/>
+        <activity android:name=".ui.mydevice.map.navigation.BNDemoMainActivity"
+                  android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.mydevice.map.navigation.BNDemoGuideActivity"
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden"

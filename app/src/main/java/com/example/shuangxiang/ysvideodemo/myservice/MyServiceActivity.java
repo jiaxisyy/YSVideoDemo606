@@ -54,8 +54,6 @@ public class MyServiceActivity extends BaseActivity implements IMyService {
         mTbMyservice.setNavigationIcon(R.drawable.icon_back);
         mTbMyservice.setTitle("");
         setSupportActionBar(mTbMyservice);
-
-
     }
 
     @Override
@@ -70,8 +68,6 @@ public class MyServiceActivity extends BaseActivity implements IMyService {
     @OnClick(R.id.tv_callPhone)
     public void onViewClicked() {
         showPopupWindow();
-
-
     }
 
 
@@ -148,6 +144,7 @@ public class MyServiceActivity extends BaseActivity implements IMyService {
             } else {
                 // 不需要解释为何需要该权限，直接请求授权
                 ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, MY_PERMISSIONS_REQUEST_CALL_PHONE);
+               callPhone();
             }
         } else {
             // 已经获得授权，可以打电话

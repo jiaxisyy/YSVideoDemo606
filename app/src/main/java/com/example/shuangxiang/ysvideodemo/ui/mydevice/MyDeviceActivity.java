@@ -88,7 +88,6 @@ public class MyDeviceActivity extends BaseActivity implements IMyDeviceListV,Act
         }
         initView();
         initData();
-
         //改变为不滑动
 //        mTabLayout.setupWithViewPager(mViewPager);
 
@@ -99,7 +98,6 @@ public class MyDeviceActivity extends BaseActivity implements IMyDeviceListV,Act
         mPresenter.getAllDevice();
         PermissionUtils.requestPermission(this, PermissionUtils.CODE_ACCESS_FINE_LOCATION,
                 mPermissionGrant);
-
     }
 
 
@@ -143,7 +141,6 @@ public class MyDeviceActivity extends BaseActivity implements IMyDeviceListV,Act
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         PermissionUtils.requestPermissionsResult(this, requestCode, permissions, grantResults,
                 mPermissionGrant);
-
     }
     private PermissionUtils.PermissionGrant mPermissionGrant = new PermissionUtils.PermissionGrant() {
         @Override

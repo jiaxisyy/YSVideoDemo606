@@ -92,7 +92,7 @@
                 <TextView
                     android:id="@+id/tv_warning_map_numRed"
                     style="@style/tv_warning_map_num"
-                    android:text="36"/>
+                    android:text="0"/>
 
                 <TextView
                     style="@style/tv_warning_map_num"
@@ -113,7 +113,7 @@
                 <TextView
                     android:id="@+id/tv_warning_map_numYellow"
                     style="@style/tv_warning_map_num"
-                    android:text="36"/>
+                    android:text="0"/>
 
                 <TextView
                     style="@style/tv_warning_map_num"
@@ -142,7 +142,7 @@
                 <TextView
                     android:id="@+id/tv_warning_map_numOrange"
                     style="@style/tv_warning_map_num"
-                    android:text="36"/>
+                    android:text="0"/>
 
                 <TextView
                     style="@style/tv_warning_map_num"
@@ -161,7 +161,7 @@
                 <TextView
                     android:id="@+id/tv_warning_map_numGreen"
                     style="@style/tv_warning_map_num"
-                    android:text="36"/>
+                    android:text="0"/>
 
                 <TextView
                     style="@style/tv_warning_map_num"

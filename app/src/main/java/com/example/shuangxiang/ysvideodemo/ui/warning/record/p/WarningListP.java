@@ -39,6 +39,11 @@ public class WarningListP implements IWarningListP {
     }
 
     @Override
+    public void getResouceFailed() {
+        mView.setToast(Constants.Define.SERVERQUERSTERROR);
+    }
+
+    @Override
     public void getRefreshResouce() {
 
     }

@@ -64,13 +64,14 @@
                 android:id="@+id/iv_datashow_analyze"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="44px"
-                android:src="@drawable/icon_shujufenxi_default"
-                android:layout_centerVertical="true"
                 android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="44px"
                 android:cropToPadding="true"
                 android:padding="30px"
-                android:layout_marginEnd="24dp"/>
+                android:src="@drawable/icon_shujufenxi_default"/>
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -81,46 +82,61 @@
 
         </RelativeLayout>
 
-        <LinearLayout
-            android:id="@+id/ll_dataShow_circle"
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20px"
-            android:background="@drawable/datashow_circle"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_gravity="center_horizontal"
+            >
 
-            <TextView
-                android:id="@+id/tv_dataShow_circleTitle"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="70px"
-                android:text="出水温度"
-                android:textColor="#8cd0fb"
-                android:textSize="40px"/>
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20px"
+                android:gravity="center"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_dataShow_circleNum"
+                <TextView
+                    android:id="@+id/tv_dataShow_circleTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="70px"
+                    android:text="出水温度"
+                    android:textColor="#8cd0fb"
+                    android:textSize="40px"/>
+
+                <TextView
+                    android:id="@+id/tv_dataShow_circleNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="150.0"
+                    android:textColor="#f0fafe"
+                    android:textSize="140px"/>
+
+                <TextView
+                    android:id="@+id/tv_dataShow_circleUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="68px"
+                    android:singleLine="true"
+                    android:text="单位:℃"
+                    android:textColor="#8cd0fb"
+                    android:textSize="40px"/>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/ll_dataShow_circle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:singleLine="true"
-                android:text="150.0"
-                android:textColor="#f0fafe"
-                android:textSize="140px"/>
+                android:background="@drawable/datashow_circle"/>
 
-            <TextView
-                android:id="@+id/tv_dataShow_circleUnit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="68px"
-                android:singleLine="true"
-                android:text="单位:℃"
-                android:textColor="#8cd0fb"
-                android:textSize="40px"/>
+        </RelativeLayout>
 
-
-        </LinearLayout>
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_dataMonitoring_showCenter"

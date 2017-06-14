@@ -75,8 +75,8 @@ public class SettingParameterP implements ISettingParameterP {
             mISettingParameterM.getParameterValue(valueUrl);
         } else {
             CustomToast.showToast(mContext, Constants.Define.SERVERDATAERROR, Toast.LENGTH_SHORT);
+            mISettingParameterV.dissDialog();
         }
-
     }
 
     @Override
@@ -111,8 +111,6 @@ public class SettingParameterP implements ISettingParameterP {
             e.printStackTrace();
             Log.e("ERROR", e.getMessage().toString());
         }
-
-
     }
 
     @Override

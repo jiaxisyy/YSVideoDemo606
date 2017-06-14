@@ -10,6 +10,7 @@ public interface IWarningListP {
     void getResouce();
 
     void getResouceSucceed(WarningInfo data);
+    void getResouceFailed();
 
     void getRefreshResouce();
 

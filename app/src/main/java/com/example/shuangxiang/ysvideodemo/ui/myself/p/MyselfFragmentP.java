@@ -50,7 +50,6 @@ public class MyselfFragmentP implements IMyselfFragmentP {
             @Override
             public void onClick(View view) {
                 mView.exit();
-
                 mContext.startActivity(new Intent(mContext, LoginActivity.class));
             }
         });
@@ -65,7 +64,6 @@ public class MyselfFragmentP implements IMyselfFragmentP {
 //        popupWindow.setBackgroundDrawable(new BitmapDrawable());
 //        mPopupWindow.setAnimationStyle(R.style.AnimationPreview);
         mPopupWindow.showAsDropDown(view, 0, 0, Gravity.FILL);
-
 
     }
 

@@ -32,10 +32,10 @@
             <!--android:text="@string/tv_warning_listTitle_status"/>-->
     <!--</LinearLayout>-->
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:background="#e6e6e6"/>
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:background="#e6e6e6"/>-->
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_warning_list"

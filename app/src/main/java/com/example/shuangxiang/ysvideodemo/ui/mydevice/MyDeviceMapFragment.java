@@ -72,8 +72,6 @@ public class MyDeviceMapFragment extends BaseFragment implements IMyDeviceMapV, 
         mPresenter = new MyDeviceMapP(this, getActivity(), mMapView);
         mProgressDialog = new ProgressDialog(getActivity());
         mProgressDialog.show();
-
-
     }
 
 

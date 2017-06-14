@@ -202,6 +202,7 @@ public class ApiManager {
         return sWarningListRequest.getRecord(pageNum, pageSize, fromDate, toDate,deviceId);
     }
 
+
     /**
      * 数据显示界面下面的标题获取
      *

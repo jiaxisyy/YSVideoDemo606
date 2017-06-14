@@ -4,11 +4,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.baidu.mapapi.map.TextureMapView;
 import com.example.shuangxiang.ysvideodemo.R;
 import com.example.shuangxiang.ysvideodemo.common.Constants;
 import com.example.shuangxiang.ysvideodemo.common.utils.CacheUtils;
+import com.example.shuangxiang.ysvideodemo.common.utils.CustomToast;
 import com.example.shuangxiang.ysvideodemo.ui.BaseFragment;
 import com.example.shuangxiang.ysvideodemo.ui.warning.map.p.WarningMapP;
 import com.example.shuangxiang.ysvideodemo.ui.warning.map.v.IWarningMapV;
@@ -95,6 +97,7 @@ public class WarningMapFragment extends BaseFragment implements IWarningListV, I
 
     @OnClick({R.id.ll_warning_map_red, R.id.ll_warning_map_orange, R.id.ll_warning_map_yellow, R.id.ll_warning_map_green, R.id.ll_warning_map_all})
     public void onViewClicked(View view) {
+        if(mWarningMapP!=null)
         switch (view.getId()) {
             case R.id.ll_warning_map_red:
                 mWarningMapP.clickRed();
@@ -119,7 +122,6 @@ public class WarningMapFragment extends BaseFragment implements IWarningListV, I
         mWarningMapP = new WarningMapP(this, mMapView, getActivity());
         mWarningMapP.init();
         mWarningMapP.setData(data);
-
     }
 
     @Override
@@ -130,6 +132,11 @@ public class WarningMapFragment extends BaseFragment implements IWarningListV, I
     @Override
     public void loadMore(List<WarningInfo.ListBean> data) {
 
+    }
+
+    @Override
+    public void setToast(String s) {
+        CustomToast.showToast(getActivity(),s, Toast.LENGTH_SHORT);
     }
 
     @Override

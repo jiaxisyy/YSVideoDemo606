@@ -321,7 +321,7 @@ public class DataAnalyzeFragment extends BaseFragment implements
 
     @Override
     protected boolean isCache() {
-        return true;
+        return false;
     }
 
     private void setData(List<String> list) {
@@ -488,13 +488,12 @@ public class DataAnalyzeFragment extends BaseFragment implements
                     }
                 });
             }
-
-
         } else {
-            CustomToast.showToast(getActivity(), Constants.Define.SERVERDATAERROR, Toast.LENGTH_SHORT);
+            if (mFirstInto) {
+                mFirstInto = false;
+                CustomToast.showToast(getActivity(), Constants.Define.SERVERDATAERROR, Toast.LENGTH_SHORT);
+            }
         }
-
-
     }
 
     @Override

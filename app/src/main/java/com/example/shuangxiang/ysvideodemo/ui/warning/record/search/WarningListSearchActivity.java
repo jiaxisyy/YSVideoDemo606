@@ -68,7 +68,7 @@ public class WarningListSearchActivity extends BaseActivity implements IWarningL
 
     @Override
     protected void initSomething() {
-        mProgressDialog = new ProgressDialog(WarningListSearchActivity.this);
+//        mProgressDialog = new ProgressDialog(WarningListSearchActivity.this);
         // 获取日历的一个对象
         mCalendar = Calendar.getInstance();
         // 获取年月日时分秒的信息
@@ -103,11 +103,10 @@ public class WarningListSearchActivity extends BaseActivity implements IWarningL
                     mWarningListP.getResouce();
                     Log.d("TEST", "哈哈");
 
-                    mProgressDialog.show();
+//                    mProgressDialog.show();
                 }
             }
         }, mYear, mMonth, mDay);
-
 
     }
 
@@ -173,7 +172,7 @@ public class WarningListSearchActivity extends BaseActivity implements IWarningL
         } else {
             CustomToast.showToast(this, Constants.Define.SEARCH_NOTHING, Toast.LENGTH_SHORT);
         }
-        mProgressDialog.dismiss();
+//        mProgressDialog.dismiss();
     }
 
     @Override
@@ -184,6 +183,11 @@ public class WarningListSearchActivity extends BaseActivity implements IWarningL
     @Override
     public void loadMore(List<WarningInfo.ListBean> data) {
 
+    }
+
+    @Override
+    public void setToast(String s) {
+        CustomToast.showToast(this,s,Toast.LENGTH_SHORT);
     }
 
     @Override
