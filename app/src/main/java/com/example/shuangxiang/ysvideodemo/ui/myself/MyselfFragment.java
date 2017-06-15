@@ -149,6 +149,7 @@ public class MyselfFragment extends BaseFragment implements IMyselfFragmentV, ID
         new Thread(new Runnable() {
             @Override
             public void run() {
+                if(instance!=null)
                 instance.logout();
             }
         }).start();
