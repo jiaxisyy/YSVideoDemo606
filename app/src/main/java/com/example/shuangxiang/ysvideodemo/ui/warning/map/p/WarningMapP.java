@@ -130,25 +130,25 @@ public class WarningMapP implements IWarningMapP, BaiduMap.OnMarkerClickListener
             if (mList.get(i).getLevel().equals("1")) {
                 if (!mList.get(i).getLatitude().equals("") && !mList.get(i)
                         .getLongitude().equals(""))
-                addMaker(Double.valueOf(mList.get(i).getLatitude()), Double.valueOf(mList.get(i)
-                        .getLongitude()), MAKERTYPE_RED);
+                    addMaker(Double.valueOf(mList.get(i).getLatitude()), Double.valueOf(mList.get(i)
+                            .getLongitude()), MAKERTYPE_RED);
             } else if (mList.get(i).getLevel().equals("2")) {
                 if (!mList.get(i).getLatitude().equals("") && !mList.get(i)
                         .getLongitude().equals(""))
-                addMaker(Double.valueOf(mList.get(i).getLatitude()), Double.valueOf(mList.get(i)
-                        .getLongitude()), MAKERTYPE_ORANGE);
+                    addMaker(Double.valueOf(mList.get(i).getLatitude()), Double.valueOf(mList.get(i)
+                            .getLongitude()), MAKERTYPE_ORANGE);
 
             } else if (mList.get(i).getLevel().equals("3")) {
                 if (!mList.get(i).getLatitude().equals("") && !mList.get(i)
                         .getLongitude().equals(""))
-                addMaker(Double.valueOf(mList.get(i).getLatitude()), Double.valueOf(mList.get(i)
-                        .getLongitude()), MAKERTYPE_YELLOW);
+                    addMaker(Double.valueOf(mList.get(i).getLatitude()), Double.valueOf(mList.get(i)
+                            .getLongitude()), MAKERTYPE_YELLOW);
 
             } else if (mList.get(i).getLevel().equals("4")) {
                 if (!mList.get(i).getLatitude().equals("") && !mList.get(i)
                         .getLongitude().equals(""))
-                addMaker(Double.valueOf(mList.get(i).getLatitude()), Double.valueOf(mList.get(i)
-                        .getLongitude()), MAKERTYPE_GREEN);
+                    addMaker(Double.valueOf(mList.get(i).getLatitude()), Double.valueOf(mList.get(i)
+                            .getLongitude()), MAKERTYPE_GREEN);
             }
 
         }
@@ -157,11 +157,10 @@ public class WarningMapP implements IWarningMapP, BaiduMap.OnMarkerClickListener
 
     @Override
     public void init() {
-        mBaiduMap = mMapView.getMap();
+        if (mMapView != null) mBaiduMap = mMapView.getMap();
         //注册标注的点击事件
+        if(mBaiduMap!=null)
         mBaiduMap.setOnMarkerClickListener(this);
-
-
     }
 
     @Override

@@ -173,7 +173,6 @@ public class WarningMapFragment extends BaseFragment implements IWarningListV, I
     @Override
     public void setRedNum(int num) {
         mTvNumRed.setText(String.valueOf(num));
-
     }
 
     @Override
