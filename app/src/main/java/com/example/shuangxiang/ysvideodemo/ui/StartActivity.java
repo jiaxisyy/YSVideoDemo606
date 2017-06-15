@@ -59,7 +59,7 @@ public class StartActivity extends BaseActivity implements ActivityCompat.OnRequ
 //        PermissionUtils.requestPermission(this, PermissionUtils.CODE_READ_PHONE_STATE,
 //                mPermissionGrant);
         ActivityCompat.requestPermissions(this,
-                new String[]{Manifest.permission.READ_PHONE_STATE, Manifest.permission.READ_EXTERNAL_STORAGE},
+                new String[]{Manifest.permission.READ_PHONE_STATE},
                 MY_PERMISSIONS_REQUEST);
         ActivityManager.getInstance().addActivity(new WeakReference<Activity>(this));
         final boolean isFirst = CacheUtils.getBoolean(StartActivity.this, Constants.Define.FIRST_START, true);
