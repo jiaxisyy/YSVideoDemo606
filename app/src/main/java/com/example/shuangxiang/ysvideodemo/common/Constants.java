@@ -25,12 +25,13 @@ public class Constants {
         String MONITORING_VIDEO = "视频监控";
 
         long START_TIME = 3000;//启动页跳转时间为3秒
-//                String BASE_URL = "http://58.250.204.112:58010/userconsle/";//外网
+//        String BASE_URL = "http://58.250.204.112:58010/userconsle/";//外网
         String BASE_URL = "http://kawakp.chinclouds.com/userconsle/";//阿里云
         //内网
 //    private static final String BASEURL = "http://10.199.198.55:58010/userconsle/";
         //外网
 //    private static final String BASEURL = "http://58.250.204.112:58010/userconsle/";
+
 
         //设备列表的默认设置
         int DEFAULTPAGENUM = 1;
